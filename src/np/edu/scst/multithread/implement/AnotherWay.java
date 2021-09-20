@@ -9,20 +9,22 @@ public class AnotherWay {
     }
     public static void main(String[] args) {
         //                                      optional thread name
-        Thread t1 = new Thread("T1"){//anonymous inner class
-        @Override
+        Thread t1 = new Thread("T1"){//anonymous inner class  Abstract class | Interfaces
+        @Override 
         public void run(){
-            AnotherWay.print();
+            print();
         }
         };
-        Thread t2 = new Thread("T2"){//anonymous inner class
-        @Override
+         Thread t2 = new Thread("T2"){
+         @Override 
         public void run(){
-            AnotherWay.print();
+            print();
         }
-        };
-        t1.start();
-        t2.start();
+         };
+         t1.start();
+         t2.start();
+         print();
+        
         
     }
 }

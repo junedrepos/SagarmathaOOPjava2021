@@ -14,7 +14,6 @@ public class MultiThread extends Thread{
 //  millisecond ;    1000 millisecond = 1 second
         }
     }
-    
     public static void main(String[] args) {
         MultiThread mt1 = new MultiThread();
         MultiThread mt2 = new MultiThread();
@@ -22,10 +21,8 @@ public class MultiThread extends Thread{
         mt1.setName("Mero Thread 1");
         mt2.setName("Mero Thread 2");
 //        Thread.currentThread().setName("Mero afnai main thread");
-
         mt1.setPriority(Thread.MIN_PRIORITY);//1
         mt2.setPriority(Thread.MAX_PRIORITY);//10
-         
         mt1.start();//trigger parallel thread
         mt2.start();//trigger another parallel thread
         MultiThread.print();
