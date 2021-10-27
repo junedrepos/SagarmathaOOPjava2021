@@ -24,6 +24,7 @@ public class SerializeDemo {
         System.out.println(p2.id);
         System.out.println(p2.name);
         System.out.println(p2.level);
+//        Number
     }
 }
 
